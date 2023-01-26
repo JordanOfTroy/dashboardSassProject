@@ -13,7 +13,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
+menu, nav, output, ruby, section, .rowSection, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -26,7 +26,7 @@ time, mark, audio, video {
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section, .rowSection {
   display: block;
 }
 
@@ -54,11 +54,76 @@ table {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
   background-color: #00C29A;
   width: 100vw;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+section, .rowSection {
+  width: 100%;
+}
+
+.round {
+  border-radius: 20px;
 }
 
 .inner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
   width: 90%;
+  margin: 1em, 0em;
+  background-color: #1B1F24;
+  color: #FFFFFF;
+}
+.inner .innerCol {
+  padding: 3em;
+}
+
+.menuColumn {
+  width: 20%;
   background-color: #121418;
+}
+.menuColumn .menuImg {
+  width: 100%;
+}
+
+.displayColumn {
+  width: 80%;
+}
+
+.rowSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.rowSection > div {
+  width: 50%;
+}
+
+.iconDiv {
+  border: solid red 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+
+.profileIcon {
+  background-color: #FFD155;
+  color: #121418;
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  margin-left: 1em;
 }/*# sourceMappingURL=style.css.map */
