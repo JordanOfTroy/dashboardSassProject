@@ -1,4 +1,5 @@
 @use './assets/var' as *;
+@use './assets/mixing' as *;
 
 // -=-=-=-=-=-vvv CSS RESET - NO TOUCHIE vvv-=-=-=-=-=-
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -53,11 +54,35 @@ table {
 // -=-=-=-=-=-^^^ CSS RESET - NO TOUCHIE ^^^-=-=-=-=-=-
 
 body {
+    @include flexMe(column, center, center);
     background-color: $main-color;
     width: 100vw;
+    font-family: $font-fam;
+}
+
+.round {
+    border-radius: $main-radius;
 }
 
 .inner {
+    @include flexMe(row, flex-start, center);
     width: $inner-width;
+    margin: $inner-margin, 0em;
+    background-color: $alt-black;
+    color: $white;
+    .innerCol {
+        padding: $main-padding;
+    }
+}
+
+.menuColumn {
+    width: $menu-width;
     background-color: $black;
+    .menuImg {
+        width: 100%;
+    }
+}
+
+.displayColumn {
+    width: $display-width;
 }

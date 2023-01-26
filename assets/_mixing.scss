@@ -1,7 +1,7 @@
-// @mixin flexMeDaddy($width, $direction, $align, $justify, $display:flex) {
-//     width: $width;
-//     display: $display;
-//     flex-direction: $direction;
-//     align-items: $align;
-//     justify-content: $justify;
-// }
+@mixin flexMe($direction, $align, $justify, $display:flex, $wrap:nowrap) {
+    display: $display;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap:$wrap;
+}
