@@ -13,7 +13,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, .rowSection, summary,
+menu, nav, output, ruby, section, .rowSection, .displayColheader, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -26,7 +26,7 @@ time, mark, audio, video {
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, .rowSection {
+footer, header, hgroup, menu, nav, section, .rowSection, .displayColheader {
   display: block;
 }
 
@@ -64,12 +64,17 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-section, .rowSection {
+section, .rowSection, .displayColheader {
   width: 100%;
+  padding: 1em;
 }
 
-.round {
+.round, .card {
   border-radius: 20px;
+}
+
+.card {
+  color: #121418;
 }
 
 .inner {
@@ -99,24 +104,29 @@ section, .rowSection {
   width: 80%;
 }
 
-.rowSection {
+.rowSection, .displayColheader {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
 }
-.rowSection > div {
+.rowSection > div, .displayColheader > div {
   width: 50%;
 }
 
+.displayColheader {
+  background-color: #00C29A;
+  padding: 1em;
+}
+
 .iconDiv {
-  border: solid red 2px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   flex-wrap: nowrap;
+  margin-right: 1em;
 }
 
 .profileIcon {
@@ -126,4 +136,20 @@ section, .rowSection {
   width: 30px;
   border-radius: 20px;
   margin-left: 1em;
+}
+
+.textDiv h1 {
+  font-size: 3em;
+}
+.textDiv h3 {
+  font-weight: 1em;
+}
+
+.stats {
+  border: solid red 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }/*# sourceMappingURL=style.css.map */

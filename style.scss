@@ -62,10 +62,16 @@ body {
 
 section {
     width: 100%;
+    padding: $section-padding;
 }
 
 .round {
     border-radius: $main-radius;
+}
+
+.card {
+    @extend .round;
+    color: $black;
 }
 
 .inner {
@@ -99,9 +105,16 @@ section {
     }
 }
 
+.displayColheader {
+    @extend .rowSection;
+    background-color: $main-color;
+    padding: $section-padding;
+
+}
+
 .iconDiv {
-    border: solid red 2px;
     @include flexMe(flex, row, center, flex-end);
+    margin-right: $inner-margin;
 }
 
 .profileIcon {
@@ -111,4 +124,18 @@ section {
     width: $profile-icon-size;
     border-radius: $main-radius;
     margin-left: $inner-margin;
+}
+
+.textDiv {
+    h1 {
+        font-size: $big-header;
+    }
+    h3 {
+        font-weight: $header-sub;
+    }
+}
+
+.stats {
+    border: solid red 2px;
+    @include flexMe(flex, row, center, space-between)
 }
