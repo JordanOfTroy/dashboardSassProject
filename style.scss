@@ -197,7 +197,6 @@ h2 {
         height: $small-icon-size;
         width: $small-icon-size;
         border-radius: $small-radius;
-        background-color: $color-five;
         margin-right: $small-margin;
     }
 }
@@ -225,7 +224,6 @@ h2 {
     @include flexMe (flex, column, stretch, space-between);
     width: 100%;
     height: 100%;
-    background-color: $main-color;
     margin-bottom: $inner-margin;
     padding: $section-padding;
     .cardheader {
@@ -240,4 +238,26 @@ h2 {
             font-weight:  $reg-header-weight;
         }
     }
+}
+
+.makeItPurple {
+    background-color: $color-three;
+}
+.makeItYellow {
+    background-color: $color-six;
+}
+.makeItBlue {
+    background-color: $color-two;
+}
+.makeItOrange {
+    background-color: $color-four;
+}
+.makeItGreen {
+    background-color: $main-color;
+}
+.makeItRed {
+    background-color: $color-five;
+}
+.makeItAltGreen {
+    background-color: $alt-main-color;
 }
