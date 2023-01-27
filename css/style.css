@@ -69,6 +69,11 @@ section, .rowSection, .displayColheader {
   padding: 1em;
 }
 
+h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
 .round, .card {
   border-radius: 20px;
 }
@@ -80,7 +85,7 @@ section, .rowSection, .displayColheader {
 .inner {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: center;
   flex-wrap: nowrap;
   width: 90%;
@@ -119,6 +124,9 @@ section, .rowSection, .displayColheader {
   background-color: #00C29A;
   padding: 1em;
 }
+.displayColheader > div {
+  width: 50%;
+}
 
 .iconDiv {
   display: flex;
@@ -130,6 +138,11 @@ section, .rowSection, .displayColheader {
 }
 
 .profileIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
   background-color: #FFD155;
   color: #121418;
   height: 30px;
@@ -139,17 +152,55 @@ section, .rowSection, .displayColheader {
 }
 
 .textDiv h1 {
-  font-size: 3em;
+  font-size: 2em;
+  font-weight: bold;
 }
 .textDiv h3 {
-  font-weight: 1em;
+  font-size: 1em;
+  font-weight: 300;
+  color: #1B1F24;
+}
+
+.cardImg {
+  width: 50%;
 }
 
 .stats {
-  border: solid red 2px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
+}
+
+.stat {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.stat .statIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+  background-color: #FDC798;
+  margin-right: 1em;
+}
+
+.viewOptions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.viewOptions .viewOpt {
+  margin-left: 3em;
+  font-size: 0.7em;
 }/*# sourceMappingURL=style.css.map */

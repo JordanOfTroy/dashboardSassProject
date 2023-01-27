@@ -1,7 +1,25 @@
+@use './var' as *;
+
 @mixin flexMe($display, $direction, $align, $justify, $wrap:nowrap) {
     display: $display;
     flex-direction: $direction;
     align-items: $align;
     justify-content: $justify;
     flex-wrap:$wrap;
+}
+
+@mixin bigHeader {
+    font-size: $big-header-size;
+    font-weight: $big-header-weight;
+}
+
+@mixin headerSub {
+    font-size: $header-sub-size;
+    font-weight: $header-sub-weight;
+    color: $alt-black;
+}
+
+@mixin sectionHeader {
+    font-size: $reg-header-size;
+    font-weight: $reg-header-weight;
 }

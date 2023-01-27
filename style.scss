@@ -65,6 +65,10 @@ section {
     padding: $section-padding;
 }
 
+h2 {
+    @include sectionHeader;
+}
+
 .round {
     border-radius: $main-radius;
 }
@@ -75,7 +79,7 @@ section {
 }
 
 .inner {
-    @include flexMe(flex, row, flex-start, center);
+    @include flexMe(flex, row, stretch, center);
     width: $inner-width;
     margin: $inner-margin, 0em;
     background-color: $alt-black;
@@ -109,6 +113,9 @@ section {
     @extend .rowSection;
     background-color: $main-color;
     padding: $section-padding;
+    & > div {
+        width: 50%;
+    }
 
 }
 
@@ -118,24 +125,49 @@ section {
 }
 
 .profileIcon {
+    @include flexMe(flex, row, center, center);
     background-color: $color-four;
     color: $black;
-    height: $profile-icon-size;
-    width: $profile-icon-size;
+    height: $small-icon-size;
+    width: $small-icon-size;
     border-radius: $main-radius;
     margin-left: $inner-margin;
 }
 
 .textDiv {
     h1 {
-        font-size: $big-header;
+        @include bigHeader
     }
     h3 {
-        font-weight: $header-sub;
+        @include headerSub
     }
 }
 
+.cardImg {
+    width: 50%;
+}
+
 .stats {
-    border: solid red 2px;
     @include flexMe(flex, row, center, space-between)
 }
+
+.stat {
+    @include flexMe(flex, row, center, space-between);
+    .statIcon {
+        @include flexMe(flex, row, center, center);
+        height: $small-icon-size;
+        width: $small-icon-size;
+        border-radius: $small-radius;
+        background-color: $color-five;
+        margin-right: $small-margin;
+    }
+}
+
+.viewOptions {
+    @include flexMe (flex, row, center, flex-end);
+    .viewOpt {
+        margin-left: $reg-margin;
+        font-size: .7em;
+    }
+}
+

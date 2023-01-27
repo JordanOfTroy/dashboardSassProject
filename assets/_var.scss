@@ -12,15 +12,22 @@ $color-six: #F8FD99;
 
 //FONT
 $font-fam: Helvetica, Arial, sans-serif;
-$big-header: 3em;
-$header-sub: 1em;
+$big-header-size: 2em;
+$big-header-weight: bold;
+$header-sub-size: 1em;
+$header-sub-weight: 300;
+$reg-header-size: 1.5em;
+$reg-header-weight: 500;
 
 //SIZING
 $inner-width: 90%;
 $inner-margin: 1em;
 $main-radius: 20px;
+$small-radius: 10px;
 $main-padding: 3em;
+$small-margin: 1em;
+$reg-margin: 3em;
 $section-padding: 1em;
 $menu-width: 20%;
 $display-width: 80%;
-$profile-icon-size: 30px
+$small-icon-size: 30px
