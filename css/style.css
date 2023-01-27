@@ -87,14 +87,6 @@ section, .rowSection {
   padding: 3em;
 }
 
-.menuColumn {
-  width: 20%;
-  background-color: #121418;
-}
-.menuColumn .menuImg {
-  width: 100%;
-}
-
 .displayColumn {
   width: 80%;
 }

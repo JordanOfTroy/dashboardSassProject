@@ -134,14 +134,44 @@ table {
   border-spacing: 0;
 }
 
-/* end generated content */
+/* begin Mike's stuff */
 body {
   width: 100vw;
   background-color: #00C29A;
   font-family: Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.round {
+  border-radius: 20px;
 }
 
 .inner {
   background-color: black;
+  width: 90%;
+  margin: 1em, 0em;
+  background-color: #1B1F24;
   color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.inner .innerCol {
+  padding: 3em;
+}
+
+.menuColumn {
+  width: 20%;
+  background-color: #121418;
+}
+.menuColumn .menuImg {
+  width: 100%;
 }/*# sourceMappingURL=info.css.map */
