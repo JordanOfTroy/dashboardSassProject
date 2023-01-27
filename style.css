@@ -1,0 +1,129 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, .rowSection, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, .rowSection {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-color: #00C29A;
+  width: 100vw;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+section, .rowSection {
+  width: 100%;
+}
+
+.round {
+  border-radius: 20px;
+}
+
+.inner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 90%;
+  margin: 1em, 0em;
+  background-color: #1B1F24;
+  color: #FFFFFF;
+}
+.inner .innerCol {
+  padding: 3em;
+}
+
+.menuColumn {
+  width: 20%;
+  background-color: #121418;
+}
+.menuColumn .menuImg {
+  width: 100%;
+}
+
+.displayColumn {
+  width: 80%;
+}
+
+.rowSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.rowSection > div {
+  width: 50%;
+}
+
+.iconDiv {
+  border: solid red 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+
+.profileIcon {
+  background-color: #FFD155;
+  color: #121418;
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  margin-left: 1em;
+}/*# sourceMappingURL=style.css.map */
