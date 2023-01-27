@@ -17,6 +17,7 @@
     font-size: $header-sub-size;
     font-weight: $header-sub-weight;
     color: $alt-black;
+    word-spacing: $reg-word-spacing;
 }
 
 @mixin sectionHeader {
