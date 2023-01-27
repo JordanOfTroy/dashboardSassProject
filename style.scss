@@ -90,10 +90,49 @@ h2 {
 }
 
 .menuColumn {
+    @include flexMe (flex, column, center, space-between);
     width: $menu-width;
     background-color: $black;
     .menuImg {
         width: 100%;
+    }
+}
+
+.logoDiv {
+    margin-bottom: $reg-margin;
+    @include flexMe (flex, row, center, flex-start);
+    .bars {
+        @include flexMe (flex, row, flex-end, flex-start);
+        margin-right: .2em;
+        .logoBar {
+            height: 1em;
+            width: .4em;
+            margin-right: .2em;
+            border-radius: 3px;
+            &:nth-child(1) {
+                background-color: $main-color;
+            }
+            &:nth-child(2) {
+                background-color: $color-four;
+                height: .75em;
+            }
+            &:nth-child(3) {
+                background-color: $color-two;
+            }
+        }
+    }
+}
+
+.linkDiv {
+    margin-bottom: $reg-margin;
+    font-weight: $header-sub-weight;
+    i {
+        color: $white-alpha;
+        margin-right: $small-margin;
+    }
+    a {
+        text-decoration: none;
+        color: $white;
     }
 }
 
