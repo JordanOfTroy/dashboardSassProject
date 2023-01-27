@@ -63,6 +63,7 @@ body {
 section {
     width: 100%;
     padding: $section-padding;
+    border: solid fuchsia 2px;
 }
 
 h2 {
@@ -171,3 +172,17 @@ h2 {
     }
 }
 
+.cardSection {
+    border: solid orange 2px;
+    @include flexMe (flex, row, stretch, space-around);
+    width: 100%;
+    .cardSectionCol {
+        width: 100%;
+    }
+}
+
+.infoCard {
+    border: solid aquamarine 2px;
+    background-color: $main-color;
+    width: 100%;
+}

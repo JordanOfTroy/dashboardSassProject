@@ -67,6 +67,7 @@ body {
 section, .rowSection, .displayColheader {
   width: 100%;
   padding: 1em;
+  border: solid fuchsia 2px;
 }
 
 h2 {
@@ -203,4 +204,23 @@ h2 {
 .viewOptions .viewOpt {
   margin-left: 3em;
   font-size: 0.7em;
+}
+
+.cardSection {
+  border: solid orange 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.cardSection .cardSectionCol {
+  width: 100%;
+}
+
+.infoCard {
+  border: solid aquamarine 2px;
+  background-color: #00C29A;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
