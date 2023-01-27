@@ -11,75 +11,79 @@
 </head>
 
 <body>
-    <div class="inner round">
+    <div class="inner row round">
         <div class="menuColumn innerCol">
-            <div class="logo">
-                <div class="logoBars">
-                    <div class="bigLogoBar">g</div>
-                    <div class="smallLogoBar">y</div>
-                    <div class="bigLogoBar">b</div>
+            <div class="menuColTop">
+                <div id="logoRow" class="row">
+                    <div id="logoBars" class="row">
+                        <div class="bigLogoBar">g</div>
+                        <div class="smallLogoBar">y</div>
+                        <div class="bigLogoBar">b</div>
+                    </div>
+                    <div class="logoText">Max</div>
                 </div>
-                <div class="logoText">Max</div>
+                <nav id="primaryNav">
+                    <div class="row">
+                        <div class="priNavIcon">dsI</div>
+                        <div class="priNavText">Dash</div>
+                    </div>
+                    <div class="row">
+                        <div class="priNavIcon">prI</div>
+                        <div class="priNavText">Profls</div>
+                    </div>
+                    <div class="row">
+                        <div class="priNavIcon">ogI</div>
+                        <div class="priNavText">Org</div>
+                    </div>
+                    <div class="row">
+                        <div class="priNavIcon">dpI</div>
+                        <div class="priNavText">Dept</div>
+                    </div>
+                    <div class="row">
+                        <div class="priNavIcon">stI</div>
+                        <div class="priNavText">Setgs</div>
+                    </div>
+                </nav>
             </div>
-            <nav class="primaryNav>">
-                <div class="priNavItem">
-                    <div class="priNavIcon">dsI</div>
-                    <div class="priNavText">Dash</div>
+            <div class="menuColBottom">
+                <div class="corpSplash">
+                    <div class="splashNew"></div>
+                    <div class="splashText">Veteran Affairs Hospital</div>
+                    <div class="splashArt">docPic</div>
                 </div>
-                <div class="priNavItem">
-                    <div class="priNavIcon">prI</div>
-                    <div class="priNavText">Profls</div>
-                </div>
-                <div class="priNavItem">
-                    <div class="priNavIcon">ogI</div>
-                    <div class="priNavText">Org</div>
-                </div>
-                <div class="priNavItem">
-                    <div class="priNavIcon">dpI</div>
-                    <div class="priNavText">Dept</div>
-                </div>
-                <div class="priNavItem">
-                    <div class="priNavIcon">stI</div>
-                    <div class="priNavText">Setgs</div>
-                </div>
-            </nav>
-            <div class="corpSplash">
-                <div class="splashNew"></div>
-                <div class="splashText">Veteran Affairs Hospital</div>
-                <div class="splashArt">docPic</div>
             </div>
         </div>
         <div class="displayColumn innerCol">
-            <section class="mainTopicToolbar">
-                <div class="searchTool">
+            <div id="mainTopicToolbar" class="row">
+                <div id="searchWidget" class="row">
                     <div class="queryText">Search Query</div>
-                    <div class="searchButton">hgls</div>
+                    <div class="searchButton">hrgls</div>
                 </div>
-                <div class="mainTopicNotificationTools">
+                <div id="mainTopicNotificationTools" class="row">
                     <div class="notificationTool">mailIco</div>
                     <div class="notificationTool">bellIco</div>
                 </div>
-                <div class="userSelectTool">
+                <div id="userSelectTool" class="row">
                     <div class="userAvatar">VAc</div>
                     <div class="userSelectDropdown">dnArw</div>
                 </div>
-            </section>
-            <section class="mainTopic">
-                <div class="mainTopicInfo">
-                    <div class="mainTopicName">Max Affairs Hospital</div>
-                    <div class="mainTopicContent">
-                        <div class="addressLine">901 E 7th St.</div>
-                        <div class="addressLine">Long Beach, CA 90822</div>
+            </div>
+            <div id="mainTopic" class="row">
+                <div id="mainTopicInfo">
+                    <div id="mainTopicName">Max Affairs Hospital</div>
+                    <div id="mainTopicContent">
+                        <div class="contenteLine">901 E 7th St.</div>
+                        <div class="contentLine">Long Beach, CA 90822</div>
                     </div>
-                    <div class="topicStatuses">
-                        <div class="topicStatus">
+                    <div id="topicStatuses" class="row">
+                        <div class="row">
                             <div class="statusIcon">ckmk</div>
                             <div class="statusInfo">
                                 <div class="statusName">Profile Completed</div>
                                 <div class="statusNumber">37</div>
                             </div>
                         </div>
-                        <div class="topicStatus">
+                        <div class="row">
                             <div class="statusIcon">clk</div>
                             <div class="statusInfo">
                                 <div class="statusName">Profile Pending</div>
@@ -88,18 +92,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="mainTopicGraphic"></div>
-            </section>
-            <section class="analytics">
-                <div class="analyticsOverview">
-                    <div class="widgetNavTitle">Analytics Overview</div>
-                    <div class="widgetNavTimeSelectors">
+                <div class="mainTopicGraphic">MainTopImg</div>
+            </div>
+            <div id="analytics">
+                <div id="analyticsOverviewRow" class="row">
+                    <div id="widgetNavTitle">Analytics Overview</div>
+                    <div id="widgetNavTimeSelectors" class="row">
                         <div class="timeRangeSelect">All Time</div>
                         <div class="timeRangeSelect">This Month</div>
                         <div class="timeRangeSelect timeRangeSelected">Last 7 Days</div>
                     </div>
                 </div>
-                <div class="widgets">
+                <div id="widgetsRow" class="row">
                     <div class="widgetColumn">
                         <div class="widget">
                             Providers
@@ -127,7 +131,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
     </div>
 </body>

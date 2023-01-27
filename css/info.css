@@ -135,6 +135,10 @@ table {
 }
 
 /* begin Mike's stuff */
+.row {
+  display: flex;
+}
+
 body {
   width: 100vw;
   background-color: #00C29A;
@@ -156,11 +160,6 @@ body {
   margin: 1em, 0em;
   background-color: #1B1F24;
   color: white;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
   overflow: hidden;
 }
 .inner .innerCol {
@@ -170,6 +169,10 @@ body {
 .menuColumn {
   width: 20%;
   background-color: #121418;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 .menuColumn .menuImg {
   width: 100%;

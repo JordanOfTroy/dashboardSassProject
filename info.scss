@@ -141,6 +141,10 @@ table {
 // -=-=-=-=-=-^^^ CSS RESET - NO TOUCHIE ^^^-=-=-=-=-=-
 
 /* begin Mike's stuff */
+.row {
+    display: flex;
+}
+
 body {
     width: 100vw;
     background-color: $main-color;
@@ -158,7 +162,7 @@ body {
     margin: $inner-margin, 0em;
     background-color: $alt-black;
     color: white;
-    @include flexMe(flex, row, flex-start, flex-start);
+//    @include flexMe(flex, row, flex-start, flex-start);
 
     .innerCol {
        padding: $main-padding;
@@ -169,12 +173,17 @@ body {
 .menuColumn {
     width: $menu-width;
     background-color: $black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
 
     .menuImg {
         width: 100%;
     }
 }
 
-// .displayColumn {
-//    width: $display-width;
-// }
+//.displayColumn {
+//   width: $display-width;
+//   position: absolute;
+//}
