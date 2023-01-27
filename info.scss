@@ -158,12 +158,11 @@ body {
     margin: $inner-margin, 0em;
     background-color: $alt-black;
     color: white;
-    @include flexMe(flex, row, flex-start, center);
+    @include flexMe(flex, row, flex-start, flex-start);
 
     .innerCol {
        padding: $main-padding;
     }
-    justify-content: space-between;
     overflow: hidden;
 }
 
