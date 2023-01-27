@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -135,5 +135,12 @@ table {
 }
 
 body {
+  width: 100vw;
   background-color: #00C29A;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.inner {
+  background-color: black;
+  color: white;
 }/*# sourceMappingURL=info.css.map */
