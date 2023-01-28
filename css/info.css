@@ -54,4 +54,10 @@ table {
 
 /**********************/
 /* begin Mike's stuff */
-/**********************//*# sourceMappingURL=info.css.map */
+/**********************/
+body {
+  height: 100vmax;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=info.css.map */
