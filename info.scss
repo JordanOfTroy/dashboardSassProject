@@ -6,13 +6,17 @@
 /**********************/
 
 body {
-    height: 100vmax;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .dashboard {
+    width: $dash-width;
+    height: $dash-height;
+    // aspect-ratio: 4/3;
+    border-radius: $dash-border-radius;
     background-color: $dash-bg-color;
     color: $dash-txt-color;
 }
