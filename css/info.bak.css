@@ -1,0 +1,23 @@
+body {
+  background-color: #00c29a;
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+  height: 50vh;
+}
+
+.inner {
+  background-color: #121418;
+  width: 90%;
+  color: yellow;
+  overflow: hidden;
+}
+.menuColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.menuColumn .menuImg {
+  width: 100%;
+}/*# sourceMappingURL=info.bak.css.map */
