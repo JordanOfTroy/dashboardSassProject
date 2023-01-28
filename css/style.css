@@ -62,6 +62,7 @@ body {
   background-color: #00C29A;
   width: 100vw;
   font-family: Helvetica, Arial, sans-serif;
+  padding-top: 2em;
 }
 
 section, .rowSection, .displayColheader {
@@ -103,7 +104,7 @@ h2 {
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  width: 20%;
+  width: 25%;
   background-color: #121418;
 }
 .menuColumn .menuImg {
@@ -157,7 +158,7 @@ h2 {
 }
 
 .displayColumn {
-  width: 80%;
+  width: 75%;
 }
 
 .rowSection, .displayColheader {
@@ -166,9 +167,26 @@ h2 {
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
+  margin-bottom: 2em;
 }
 .rowSection > div, .displayColheader > div {
   width: 50%;
+}
+
+.searchDiv label {
+  background-color: #1B1F24;
+  padding: 0.5em;
+  border: solid #121418 2px;
+  border-radius: 10px;
+}
+
+.darkSearch {
+  background-color: #121418;
+  color: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 1em;
+  border-radius: 10px;
+  width: 60%;
 }
 
 .displayColheader {
@@ -196,10 +214,17 @@ h2 {
   flex-wrap: nowrap;
   background-color: #FFD155;
   color: #121418;
-  height: 30px;
-  width: 30px;
-  border-radius: 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
   margin-left: 1em;
+}
+
+.notificationIcons {
+  margin-right: 3em;
+}
+.notificationIcons .notificationIcon {
+  margin-left: 1.5em;
 }
 
 .textDiv h1 {
@@ -254,6 +279,14 @@ h2 {
 .viewOptions .viewOpt {
   margin-left: 3em;
   font-size: 0.7em;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 1em;
+  border-radius: 50px;
+}
+.viewOptions .viewOpt:hover {
+  color: #FFFFFF;
+  background-color: #121418;
+  cursor: pointer;
 }
 
 .cardSection {

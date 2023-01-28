@@ -58,6 +58,7 @@ body {
     background-color: $main-color;
     width: 100vw;
     font-family: $font-fam;
+    padding-top: $main-padding;
 }
 
 section {
@@ -146,6 +147,25 @@ h2 {
     & > div {
         width: 50%;
     }
+    margin-bottom: 2em;
+}
+
+.searchDiv {
+    label {
+        background-color: $alt-black;
+        padding: $small-padding;
+        border: solid $black 2px;
+        border-radius: $small-radius;
+    }
+}
+
+.darkSearch {
+    background-color: $black;
+    color: $white-alpha;
+    border: none;
+    padding: $section-padding;
+    border-radius: $small-radius;
+    width: 60%;
 }
 
 .displayColheader {
@@ -167,11 +187,19 @@ h2 {
     @include flexMe(flex, row, center, center);
     background-color: $color-four;
     color: $black;
-    height: $small-icon-size;
-    width: $small-icon-size;
-    border-radius: $main-radius;
+    height: $profile-icon-size;
+    width: $profile-icon-size;
+    border-radius: $profile-radius;
     margin-left: $inner-margin;
 }
+
+.notificationIcons{
+    margin-right: $reg-margin;
+    .notificationIcon {
+        margin-left: 1.5em;
+    }
+}
+
 
 .textDiv {
     h1 {
@@ -206,6 +234,14 @@ h2 {
     .viewOpt {
         margin-left: $reg-margin;
         font-size: .7em;
+        color: $white-alpha;
+        padding: $section-padding;
+        border-radius: $profile-radius;
+        &:hover {
+            color: $white;
+            background-color: $black;
+            cursor: pointer;
+        }
     }
 }
 
