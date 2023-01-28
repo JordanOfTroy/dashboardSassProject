@@ -12,11 +12,18 @@ body {
     align-items: center;
 }
 
-.dashboard {
-    width: $dash-width;
-    height: $dash-height;
+.app {
+    width: $app-width;
+    height: $app-height;
     // aspect-ratio: 4/3;
-    border-radius: $dash-border-radius;
-    background-color: $dash-bg-color;
-    color: $dash-txt-color;
+    border-radius: $app-border-radius;
+    overflow: hidden;
+    background-color: $app-bg-color;
+    color: $app-txt-color;
+    display: flex;
+}
+
+.nav-pane {
+    background-color: $nav-pane-bg-color;
+    width: $nav-pane-width;
 }
