@@ -56,8 +56,40 @@ table {
 /* begin Mike's stuff */
 /**********************/
 body {
-  height: 100vmax;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.app {
+  width: 92.5vw;
+  height: 92.5vh;
+  border-radius: 2vw;
+  overflow: hidden;
+  background-color: #1B1F24;
+  color: #FFFFFF;
+  display: flex;
+}
+
+.nav-pane {
+  background-color: #121418;
+  width: 16vw;
+  padding: 2vw;
+  max-width: 16vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.splash {
+  background-color: #3393FF;
+  border-radius: 1vw;
+  padding: 1.5vw;
+  padding-bottom: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
 }/*# sourceMappingURL=info.css.map */
