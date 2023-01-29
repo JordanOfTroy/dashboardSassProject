@@ -67,7 +67,6 @@ body {
 
 section, .rowSection, .displayColheader {
   width: 100%;
-  padding: 1em;
 }
 
 h2 {
@@ -109,6 +108,7 @@ h2 {
 }
 .menuColumn .menuImg {
   width: 100%;
+  border-radius: 20px;
 }
 
 .logoDiv {
@@ -141,7 +141,7 @@ h2 {
   height: 0.75em;
 }
 .logoDiv .bars .logoBar:nth-child(3) {
-  background-color: #4EA2FF;
+  background-color: #3493FF;
 }
 
 .linkDiv {
@@ -155,6 +155,33 @@ h2 {
 .linkDiv a {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.menuMessage {
+  background-color: #3493FF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 0.5em 0.5em 0 0.5em;
+  border-radius: 20px;
+}
+.menuMessage > p {
+  margin-bottom: 1em;
+  color: #121418;
+}
+.menuMessage > p:nth-child(1) {
+  background-color: #FFD155;
+  padding: 0.5em;
+  font-size: 0.75em;
+  border-radius: 20px;
+  margin-top: 1em;
+}
+.menuMessage > p:nth-child(2) {
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
 }
 
 .displayColumn {
@@ -339,7 +366,7 @@ h2 {
 .infoCard .cardheader {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   flex-wrap: nowrap;
   margin-bottom: 3em;
@@ -354,7 +381,7 @@ h2 {
 }
 
 .makeItPurple {
-  background-color: #C89AFE;
+  background-color: #7C77FA;
 }
 
 .makeItYellow {
@@ -362,7 +389,7 @@ h2 {
 }
 
 .makeItBlue {
-  background-color: #4EA2FF;
+  background-color: #3493FF;
 }
 
 .makeItOrange {

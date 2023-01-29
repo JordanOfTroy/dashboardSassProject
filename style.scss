@@ -63,7 +63,7 @@ body {
 
 section {
     width: 100%;
-    padding: $section-padding;
+    // padding: $section-padding;
 }
 
 h2 {
@@ -96,6 +96,7 @@ h2 {
     background-color: $black;
     .menuImg {
         width: 100%;
+        border-radius: $main-radius;
     }
 }
 
@@ -134,6 +135,29 @@ h2 {
     a {
         text-decoration: none;
         color: $white;
+    }
+}
+
+.menuMessage {
+    background-color: $color-two;
+    @include flexMe (flex, column, center, center);
+    padding: $small-padding $small-padding 0 $small-padding;
+    border-radius: $main-radius;
+    & > p {
+        margin-bottom: $small-margin;
+        color: $black;
+        &:nth-child(1) {
+            background-color: $color-four;
+            padding: $small-padding;
+            font-size: .75em;
+            border-radius: $main-radius;
+            margin-top: $small-margin;
+        }
+        &:nth-child(2) {
+            font-size: 1.25em;
+            font-weight: bold;
+            text-align: center;
+        }
     }
 }
 
@@ -279,7 +303,7 @@ h2 {
     margin-bottom: $inner-margin;
     padding: $section-padding;
     .cardheader {
-        @include flexMe (flex, row, center, space-between);
+        @include flexMe (flex, row, flex-start, space-between);
         margin-bottom: $reg-margin;
     }
     .cardStat {
