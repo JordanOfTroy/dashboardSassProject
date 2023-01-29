@@ -14,56 +14,148 @@
             <section>
                 <div class="logoDiv">
                     <div class="bars">
-                        <div class="logoBar"></div>
-                        <div class="logoBar"></div>
-                        <div class="logoBar"></div>
+                        <div class="logoBar bar1"></div>
+                        <div class="logoBar bar2"></div>
+                        <div class="logoBar bar3"></div>
                     </div>
                     <div class="logoText">Max</div>
                 </div>
                 <nav>
                     <div class="linkDiv">
-                        <i></i>
-                        <a href="#" class="linkText">Lorem.</a>
+                        <i class="fa-solid fa-table-columns"></i>
+                        <a href="#" class="linkText">Dashboard</a>
                     </div>
                     <div class="linkDiv">
-                        <i></i>
-                        <a href="#" class="linkText">Maxime!</a>
+                        <i class="fa-solid fa-user"></i>
+                        <a href="#" class="linkText">Profiles</a>
                     </div>
                     <div class="linkDiv">
-                        <i></i>
-                        <a href="#" class="linkText">Quibusdam.</a>
+                        <i class="fa-solid fa-building"></i>
+                        <a href="#" class="linkText">Organization</a>
                     </div>
                     <div class="linkDiv">
-                        <i></i>
-                        <a href="#" class="linkText">Ipsam!</a>
+                        <i class="fa-solid fa-sitemap"></i>
+                        <a href="#" class="linkText">Department</a>
                     </div>
                     <div class="linkDiv">
-                        <i></i>
-                        <a href="#" class="linkText">Ratione?</a>
+                        <i class="fa-solid fa-gear"></i>
+                        <a href="#" class="linkText">Settings</a>
                     </div>
                 </nav>
             </section>
-            <section>
-                <img src="./images/Xnip2023-01-25_18-55-39.jpg" alt="" class="menuImg round">
+            <section class="menuMessage">
+                <p>NEW</p>
+                <p>Veteran Affairs Hospital</p>
+                <img src="./images/Xnip2023-01-29_13-25-12.jpg" alt="" class="menuImg">
             </section>
         </div>
         <div class="displayColumn innerCol">
             <section class="rowSection">
                 <div class="searchDiv">
-                    <input id='searchBar'type="text">
+                    <input id='searchBar' class='darkSearch'type="text" placeholder="Search for query">
                     <label for="searchBar">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </label>
                 </div>
                 <div class="iconDiv">
                     <div class="notificationIcons">
-                        <i class="fa-regular fa-envelope"></i>
-                        <i class="fa-regular fa-bell"></i>
+                        <i class="notificationIcon fa-regular fa-envelope fa-lg"></i>
+                        <i class="notificationIcon fa-regular fa-bell fa-lg"></i>
                     </div>
-                    <div class="profileIcon">P</div>
+                    <div class="profileIcon">ES</div>
+                </div>
+            </section>
+            <section class="displayColheader card">
+                <div class="textDiv ">
+                    <h1>Max Affairs Hospital</h1>
+                    <div class="address">
+                        <h3>901 E 7th St, Long Beach,</h3>
+                        <h3>CA, 90822</h3>
+                    </div>
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="statIcon makeItAltGreen">
+                                <i class="fa-regular fa-circle-check"></i>
+                            </div>
+                            <div class="statInfo">
+                                <p class="statTitle">Profiles Completed</p>
+                                <p class="statNum">37</p>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <div class="statIcon makeItOrange">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+                            <div class="statInfo">
+                                <p class="statTitle">Profiles Pending</p>
+                                <p class="statNum">08</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="./images/Xnip2023-01-25_18-56-01.jpg" alt="" class="cardImg">
+            </section>
+            <section class="rowSection">
+                <h2>Analytics Overview</h2>
+                <div class="viewOptions">
+                    <p class="viewOpt">All Time</p>
+                    <p class="viewOpt">This Month</p>
+                    <p class="viewOpt">last 7 Days</p>
+                </div>
+            </section>
+            <section class="cardSection">
+                <div class="cardSectionCol doubleCol">
+                    <div class="infoCard card makeItPurple">
+                        <div class="cardheader">
+                            <h4 class="cardTitle">Providers</h4>
+                            <i class="fa-solid fa-suitcase-medical"></i>
+                        </div>
+                        <p class="cardStat"><span>13</span> / No.</p>
+                    </div>
+                    <div class="infoCard card makeItYellow">
+                        <div class="cardheader">
+                            <h4 class="cardTitle">Patients</h4>
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <p class="cardStat"><span>63</span> / No.</p>
+                    </div>
+                </div>
+                <div class="cardSectionCol singleCol " >
+                    <div class="infoCard card makeItBlue">
+                        <div class="cardheader">
+                            <h4 class="cardTitle">Bed Occupancy Rate</h4>
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+                        <p class="cardStat"><span>40</span> / Pct</p>
+                    </div>
+                </div>
+                <div class="cardSectionCol doubleCol ">
+                    <div class="infoCard card makeItOrange">
+                        <div class="cardheader">
+                            <h4 class="cardTitle">Bed</h4>
+                            <i class="fa-solid fa-bed"></i>
+                        </div>
+                        <p class="cardStat"><span>300</span> / No.</p>
+                    </div>
+                    <div class="infoCard card makeItGreen">
+                        <div class="cardheader">
+                            <h4 class="cardTitle">Death Rate</h4>
+                            <i class="fa-solid fa-skull-crossbones"></i>
+                        </div>
+                        <p class="cardStat"><span>230</span> / Pct</p>
+                    </div>
+                </div>
+                <div class="cardSectionCol singleCol">
+                    <div class="infoCard card makeItRed">
+                        <div class="cardheader">
+                            <h4 class="cardTitle">Bed Turnover Rate</h4>
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </div>
+                        <p class="cardStat"><span>67</span> / Pct</p>
+                    </div>
                 </div>
             </section>
         </div>
     </div>    
 </body>
-</html>
+</html> 

@@ -13,7 +13,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, .rowSection, summary,
+menu, nav, output, ruby, section, .rowSection, .displayColheader, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -26,7 +26,7 @@ time, mark, audio, video {
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, .rowSection {
+footer, header, hgroup, menu, nav, section, .rowSection, .displayColheader {
   display: block;
 }
 
@@ -62,20 +62,30 @@ body {
   background-color: #00C29A;
   width: 100vw;
   font-family: Helvetica, Arial, sans-serif;
+  padding-top: 2em;
 }
 
-section, .rowSection {
+section, .rowSection, .displayColheader {
   width: 100%;
 }
 
-.round {
+h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.round, .card {
   border-radius: 20px;
+}
+
+.card {
+  color: #121418;
 }
 
 .inner {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: center;
   flex-wrap: nowrap;
   width: 90%;
@@ -84,46 +94,316 @@ section, .rowSection {
   color: #FFFFFF;
 }
 .inner .innerCol {
-  padding: 3em;
+  padding: 2em;
 }
 
 .menuColumn {
-  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 25%;
   background-color: #121418;
 }
 .menuColumn .menuImg {
   width: 100%;
+  border-radius: 20px;
+}
+
+.logoDiv {
+  margin-bottom: 3em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.logoDiv .bars {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  margin-right: 0.2em;
+}
+.logoDiv .bars .logoBar {
+  height: 1em;
+  width: 0.4em;
+  margin-right: 0.2em;
+  border-radius: 3px;
+}
+.logoDiv .bars .logoBar:nth-child(1) {
+  background-color: #00C29A;
+}
+.logoDiv .bars .logoBar:nth-child(2) {
+  background-color: #FFD155;
+  height: 0.75em;
+}
+.logoDiv .bars .logoBar:nth-child(3) {
+  background-color: #3493FF;
+}
+
+.linkDiv {
+  margin-bottom: 3em;
+  font-weight: 300;
+}
+.linkDiv i {
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: 1em;
+}
+.linkDiv a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.menuMessage {
+  background-color: #3493FF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 0.5em 0.5em 0 0.5em;
+  border-radius: 20px;
+}
+.menuMessage > p {
+  margin-bottom: 1em;
+  color: #121418;
+}
+.menuMessage > p:nth-child(1) {
+  background-color: #FFD155;
+  padding: 0.5em;
+  font-size: 0.75em;
+  border-radius: 20px;
+  margin-top: 1em;
+}
+.menuMessage > p:nth-child(2) {
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
 }
 
 .displayColumn {
-  width: 80%;
+  width: 75%;
 }
 
-.rowSection {
+.rowSection, .displayColheader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-bottom: 2em;
+}
+.rowSection > div, .displayColheader > div {
+  width: 50%;
+}
+
+.searchDiv label {
+  background-color: #1B1F24;
+  padding: 0.5em;
+  border: solid #121418 2px;
+  border-radius: 10px;
+}
+
+.darkSearch {
+  background-color: #121418;
+  color: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 1em;
+  border-radius: 10px;
+  width: 60%;
+}
+
+.displayColheader {
+  background-color: #00C29A;
+  padding: 1em;
+  height: 30%;
+}
+.displayColheader > div {
+  width: 50%;
+}
+
+.iconDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  margin-right: 1em;
+}
+
+.profileIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-color: #FFD155;
+  color: #121418;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  margin-left: 1em;
+}
+
+.notificationIcons {
+  margin-right: 3em;
+}
+.notificationIcons .notificationIcon {
+  margin-left: 1.5em;
+}
+
+.textDiv {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+.textDiv h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+.textDiv .address h3 {
+  font-size: 1em;
+  font-weight: 300;
+  color: #1B1F24;
+  word-spacing: 0.25em;
+}
+
+.cardImg {
+  width: 50%;
+}
+
+.stats {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
 }
-.rowSection > div {
-  width: 50%;
+
+.stat {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-right: 1em;
+}
+.stat .statIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+}
+.stat .statInfo {
+  font-size: 0.75em;
+  padding-left: 0.5em;
+}
+.stat .statInfo .statNum {
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
-.iconDiv {
-  border: solid red 2px;
+.viewOptions {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   flex-wrap: nowrap;
 }
+.viewOptions .viewOpt {
+  margin-left: 3em;
+  font-size: 0.7em;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 1em;
+  border-radius: 50px;
+}
+.viewOptions .viewOpt:hover {
+  color: #FFFFFF;
+  background-color: #121418;
+  cursor: pointer;
+}
 
-.profileIcon {
+.cardSection {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 0px;
+}
+.cardSection .cardSectionCol {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin: 1em;
+}
+
+.infoCard {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+.infoCard .cardheader {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-bottom: 3em;
+}
+.infoCard .cardStat {
+  font-weight: 300;
+  word-spacing: 0.25em;
+}
+.infoCard .cardStat span {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.makeItPurple {
+  background-color: #7C77FA;
+}
+
+.makeItYellow {
+  background-color: #F8FD99;
+}
+
+.makeItBlue {
+  background-color: #3493FF;
+}
+
+.makeItOrange {
   background-color: #FFD155;
-  color: #121418;
-  height: 30px;
-  width: 30px;
-  border-radius: 20px;
-  margin-left: 1em;
+}
+
+.makeItGreen {
+  background-color: #00C29A;
+}
+
+.makeItRed {
+  background-color: #FDC798;
+}
+
+.makeItAltGreen {
+  background-color: #00E7B6;
 }/*# sourceMappingURL=style.css.map */

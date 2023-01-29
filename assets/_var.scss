@@ -2,22 +2,39 @@
 $black: #121418;
 $alt-black: #1B1F24;
 $white: #FFFFFF;
+$white-alpha: rgba(255, 255, 255, .7);
 $main-color: #00C29A;
 $alt-main-color: #00E7B6;
-$color-two: #4EA2FF;
-$color-three: #C89AFE;
+$color-two: #3493FF;
+// $color-two: #4EA2FF;
+$color-three: #7C77FA;
+// $color-three: #C89AFE;
 $color-four: #FFD155;
 $color-five: #FDC798;
 $color-six: #F8FD99;
 
 //FONT
 $font-fam: Helvetica, Arial, sans-serif;
+$big-header-size: 2em;
+$big-header-weight: bold;
+$header-sub-size: 1em;
+$header-sub-weight: 300;
+$reg-header-size: 1.5em;
+$reg-header-weight: 500;
+$reg-word-spacing: .25em;
 
 //SIZING
 $inner-width: 90%;
 $inner-margin: 1em;
 $main-radius: 20px;
-$main-padding: 3em;
-$menu-width: 20%;
-$display-width: 80%;
-$profile-icon-size: 30px
+$small-radius: 10px;
+$main-padding: 2em;
+$small-margin: 1em;
+$reg-margin: 3em;
+$section-padding: 1em;
+$small-padding: .5em;
+$menu-width: 25%;
+$display-width: 75%;
+$small-icon-size: 30px;
+$profile-icon-size: 50px;
+$profile-radius: 50px;
