@@ -2,7 +2,7 @@
 @use './assets/mixing' as *;
 
 // -=-=-=-=-=-vvv CSS RESET - NO TOUCHIE vvv-=-=-=-=-=-
-/* http://meyerweb.com/eric/tools/css/reset/
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -15,8 +15,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
@@ -28,7 +28,7 @@ time, mark, audio, video {
     box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
+article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
@@ -58,24 +58,106 @@ body {
     background-color: $main-color;
     width: 100vw;
     font-family: $font-fam;
+    padding-top: $main-padding;
 }
 
 section {
     width: 100%;
+    // padding: $section-padding;
+}
+
+h2 {
+    @include sectionHeader;
 }
 
 .round {
     border-radius: $main-radius;
 }
 
+.card {
+    @extend .round;
+    color: $black;
+}
+
 .inner {
-    @include flexMe(flex, row, flex-start, center);
+    @include flexMe(flex, row, stretch, center);
     width: $inner-width;
     margin: $inner-margin, 0em;
     background-color: $alt-black;
     color: $white;
     .innerCol {
         padding: $main-padding;
+    }
+}
+
+.menuColumn {
+    @include flexMe (flex, column, center, space-between);
+    width: $menu-width;
+    background-color: $black;
+    .menuImg {
+        width: 100%;
+        border-radius: $main-radius;
+    }
+}
+
+.logoDiv {
+    margin-bottom: $reg-margin;
+    @include flexMe (flex, row, center, flex-start);
+    .bars {
+        @include flexMe (flex, row, flex-end, flex-start);
+        margin-right: .2em;
+        .logoBar {
+            height: 1em;
+            width: .4em;
+            margin-right: .2em;
+            border-radius: 3px;
+            &:nth-child(1) {
+                background-color: $main-color;
+            }
+            &:nth-child(2) {
+                background-color: $color-four;
+                height: .75em;
+            }
+            &:nth-child(3) {
+                background-color: $color-two;
+            }
+        }
+    }
+}
+
+.linkDiv {
+    margin-bottom: $reg-margin;
+    font-weight: $header-sub-weight;
+    i {
+        color: $white-alpha;
+        margin-right: $small-margin;
+    }
+    a {
+        text-decoration: none;
+        color: $white;
+    }
+}
+
+.menuMessage {
+    background-color: $color-two;
+    @include flexMe (flex, column, center, center);
+    padding: $small-padding $small-padding 0 $small-padding;
+    border-radius: $main-radius;
+    & > p {
+        margin-bottom: $small-margin;
+        color: $black;
+        &:nth-child(1) {
+            background-color: $color-four;
+            padding: $small-padding;
+            font-size: .75em;
+            border-radius: $main-radius;
+            margin-top: $small-margin;
+        }
+        &:nth-child(2) {
+            font-size: 1.25em;
+            font-weight: bold;
+            text-align: center;
+        }
     }
 }
 
@@ -89,18 +171,170 @@ section {
     & > div {
         width: 50%;
     }
+    margin-bottom: 2em;
+}
+
+.searchDiv {
+    label {
+        background-color: $alt-black;
+        padding: $small-padding;
+        border: solid $black 2px;
+        border-radius: $small-radius;
+    }
+}
+
+.darkSearch {
+    background-color: $black;
+    color: $white-alpha;
+    border: none;
+    padding: $section-padding;
+    border-radius: $small-radius;
+    width: 60%;
+}
+
+.displayColheader {
+    @extend .rowSection;
+    background-color: $main-color;
+    padding: $section-padding;
+    height: 30%;
+    & > div {
+        width: 50%;
+    }
+
 }
 
 .iconDiv {
-    border: solid red 2px;
     @include flexMe(flex, row, center, flex-end);
+    margin-right: $inner-margin;
 }
 
 .profileIcon {
+    @include flexMe(flex, row, center, center);
     background-color: $color-four;
     color: $black;
     height: $profile-icon-size;
     width: $profile-icon-size;
-    border-radius: $main-radius;
+    border-radius: $profile-radius;
     margin-left: $inner-margin;
+}
+
+.notificationIcons{
+    margin-right: $reg-margin;
+    .notificationIcon {
+        margin-left: 1.5em;
+    }
+}
+
+
+.textDiv {
+    height: 80%;
+    @include flexMe (flex, column, flex-start, space-evenly);
+    & > * {
+        // margin-bottom: $inner-margin;
+    }
+    h1 {
+        @include bigHeader
+    }
+    .address {
+        h3 {
+            @include headerSub
+        }
+    }
+}
+
+.cardImg {
+    // width: 50%;
+    max-height: 100%;
+}
+
+.stats {
+    @include flexMe(flex, row, center, space-between)
+}
+
+.stat {
+    @include flexMe(flex, row, center, space-between);
+    margin-right: $small-margin;
+    .statIcon {
+        @include flexMe(flex, row, center, center);
+        height: $small-icon-size;
+        width: $small-icon-size;
+        border-radius: $small-radius;
+    }
+    .statInfo {
+        font-size: .75em;
+        padding-left: $small-padding;
+        .statNum {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    }
+}
+
+.viewOptions {
+    @include flexMe (flex, row, center, flex-end);
+    .viewOpt {
+        margin-left: $reg-margin;
+        font-size: .7em;
+        color: $white-alpha;
+        padding: $section-padding;
+        border-radius: $profile-radius;
+        &:hover {
+            color: $white;
+            background-color: $black;
+            cursor: pointer;
+        }
+    }
+}
+
+.cardSection {
+    @include flexMe (flex, row, stretch, space-between);
+    width: 100%;
+    padding: 0px;
+    .cardSectionCol {
+        @include flexMe (flex, column, stretch, space-between);
+        width: 100%;
+        margin: $inner-margin;
+    }
+}
+
+.infoCard {
+    @include flexMe (flex, column, stretch, space-between);
+    width: 100%;
+    height: 100%;
+    margin-bottom: $inner-margin;
+    padding: $section-padding;
+    .cardheader {
+        @include flexMe (flex, row, flex-start, space-between);
+        margin-bottom: $reg-margin;
+    }
+    .cardStat {
+        font-weight: $header-sub-weight;
+        word-spacing: $reg-word-spacing;
+        span {
+            font-size: $big-header-size;
+            font-weight:  $reg-header-weight;
+        }
+    }
+}
+
+.makeItPurple {
+    background-color: $color-three;
+}
+.makeItYellow {
+    background-color: $color-six;
+}
+.makeItBlue {
+    background-color: $color-two;
+}
+.makeItOrange {
+    background-color: $color-four;
+}
+.makeItGreen {
+    background-color: $main-color;
+}
+.makeItRed {
+    background-color: $color-five;
+}
+.makeItAltGreen {
+    background-color: $alt-main-color;
 }
