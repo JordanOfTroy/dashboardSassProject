@@ -192,6 +192,7 @@ h2 {
 .displayColheader {
   background-color: #00C29A;
   padding: 1em;
+  height: 30%;
 }
 .displayColheader > div {
   width: 50%;
@@ -227,11 +228,19 @@ h2 {
   margin-left: 1.5em;
 }
 
+.textDiv {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
 .textDiv h1 {
   font-size: 2em;
   font-weight: bold;
 }
-.textDiv h3 {
+.textDiv .address h3 {
   font-size: 1em;
   font-weight: 300;
   color: #1B1F24;

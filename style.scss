@@ -172,6 +172,7 @@ h2 {
     @extend .rowSection;
     background-color: $main-color;
     padding: $section-padding;
+    height: 30%;
     & > div {
         width: 50%;
     }
@@ -202,11 +203,18 @@ h2 {
 
 
 .textDiv {
+    height: 80%;
+    @include flexMe (flex, column, flex-start, space-evenly);
+    & > * {
+        // margin-bottom: $inner-margin;
+    }
     h1 {
         @include bigHeader
     }
-    h3 {
-        @include headerSub
+    .address {
+        h3 {
+            @include headerSub
+        }
     }
 }
 
