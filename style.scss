@@ -228,12 +228,20 @@ h2 {
 
 .stat {
     @include flexMe(flex, row, center, space-between);
+    margin-right: $small-margin;
     .statIcon {
         @include flexMe(flex, row, center, center);
         height: $small-icon-size;
         width: $small-icon-size;
         border-radius: $small-radius;
-        margin-right: $small-margin;
+    }
+    .statInfo {
+        font-size: .75em;
+        padding-left: $small-padding;
+        .statNum {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
     }
 }
 

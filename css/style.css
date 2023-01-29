@@ -265,6 +265,7 @@ h2 {
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
+  margin-right: 1em;
 }
 .stat .statIcon {
   display: flex;
@@ -275,7 +276,14 @@ h2 {
   height: 30px;
   width: 30px;
   border-radius: 10px;
-  margin-right: 1em;
+}
+.stat .statInfo {
+  font-size: 0.75em;
+  padding-left: 0.5em;
+}
+.stat .statInfo .statNum {
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .viewOptions {
