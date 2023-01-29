@@ -275,7 +275,7 @@ h2 {
 }
 
 .cardImg {
-  width: 50%;
+  max-height: 100%;
 }
 
 .stats {
