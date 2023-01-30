@@ -60,6 +60,7 @@ body {
   flex-wrap: nowrap;
   background-color: #FFD155;
   background-color: purple;
+  height: 100vh;
 }
 
 .app {
@@ -75,12 +76,12 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: calc(min(0.75 * min(95vw, 126.6666666667vh), 71.25vw) * 0.1);
   color: white;
+  overflow: hidden;
 }
 
 .nav-pane {
   width: calc(min(95vw, 126.6666666667vh) * 0.209);
   background-color: #121418;
-  background-color: red;
   box-sizing: border-box;
   padding: calc(min(95vw, 126.6666666667vh) * 0.209 * 0.09);
 }
@@ -93,11 +94,9 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
-  background-color: orange;
 }
 
 .pri-nav {
-  background-color: yellow;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -107,7 +106,6 @@ body {
 }
 
 .brand {
-  background-color: lightgreen;
   display: flex;
   flex-direction: row;
   justify-content: flex-begin;
@@ -125,7 +123,12 @@ body {
 }
 
 .app-nav {
-  background-color: green;
+  height: calc(min(0.75 * min(95vw, 126.6666666667vh), 71.25vw) * 0.45);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-begin;
+  flex-wrap: nowrap;
 }
 
 .app-nav-itm {
@@ -135,16 +138,23 @@ body {
   align-items: center;
   flex-wrap: nowrap;
 }
-.app-nav-itm img {
+
+.app-nav-itm-icon {
+  width: 10px;
+}
+.app-nav-itm-icon img {
   display: block;
+  width: 100%;
 }
 
 .app-nav-itm-name {
-  font-size: 5px;
+  font-size: calc(min(0.75 * min(95vw, 126.6666666667vh), 71.25vw) * 0.025);
 }
 
 .splash {
-  background-color: #dd0;
+  background-color: #3393ff;
+  border-radius: calc(min(95vw, 126.6666666667vh) * 0.017);
+  overflow: hidden;
 }
 .splash img {
   display: block;
