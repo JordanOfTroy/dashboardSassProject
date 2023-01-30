@@ -8,7 +8,7 @@ body {
     @include display-flex(center, center);
     background-color: $color-four;
     background-color: purple;
-    // height: 100vh;
+    height: 100vh;
 }
 
 .app {
@@ -20,13 +20,13 @@ body {
     font-family: $font-fam;
     font-size: $pri-font-size;
     color: $pri-font-color;
-    // overflow: hidden;
+    overflow: hidden;
 }
 
 .nav-pane {
     width: $nav-pane-width;
     background-color: $black;
-    background-color: red;
+    // background-color: red;
 
     box-sizing: border-box;
     padding: $nav-pane-padding;
@@ -37,51 +37,64 @@ body {
     overflow: hidden;
     @include display-flex(space-between, center, column);
 
-    background-color: orange;
+    // background-color: orange;
 }
 
-// display-flex($justify: center, $align: space-between, $direction: row, $wrap: nowrap)
-
 .pri-nav {
-    background-color: yellow;
-
     width: 100%;
     @include display-flex(center, flex-begin, column);
+
+    // background-color: yellow;
 }
 
 .brand {
-    background-color: lightgreen;
     @include display-flex(flex-begin);
     font-size: 5px;
+
+    //    background-color: lightgreen;
 }
 
 .corp-logo {
     @include display-flex();
 }
 
+// display-flex($justify: center, $align: space-between, $direction: row, $wrap: nowrap)
+
 .app-nav {
-    background-color: green;
+    height: $app-nav-height;
+    @include display-flex(space-between, flex-begin, column);
+
+    // background-color: green;
 }
 
 .app-nav-itm {
     @include display-flex(flex-begin, center);
-
-    img {
-        display: block;
-    }
 }
 
-.app-nav-itm-name {
-    font-size: 5px;
-}
+.app-nav-itm-icon {
+    width: 10px;
 
-.splash {
-    background-color: #dd0;
 
     img {
         display: block;
         width: 100%;
     }
+}
+
+.app-nav-itm-name {
+    font-size: $app-nav-itm-name-font-size;
+}
+
+.splash {
+    background-color: $splash-background-color;
+    border-radius: $app-content-border-radius;
+    overflow: hidden;
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    //    background-color: #dd0;
 }
 
 .brag-words {
