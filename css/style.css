@@ -67,6 +67,7 @@ body {
 
 section, .rowSection, .displayColheader {
   width: 100%;
+  padding: 1em;
 }
 
 h2 {
@@ -201,7 +202,7 @@ h2 {
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
 .rowSection > div, .displayColheader > div {
   width: 50%;
@@ -284,6 +285,11 @@ h2 {
   font-weight: 300;
   color: #1B1F24;
   word-spacing: 0.25em;
+}
+@media (max-width: 900px) {
+  .textDiv > * {
+    margin: 1em 0;
+  }
 }
 
 .cardImg {
