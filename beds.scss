@@ -1,1 +1,6 @@
-@use './assets/reset' as *;
+@use 'assets/reset' as *;
+@use 'assets/var' as *;
+
+body {
+    font-family: $font-fam;
+}
