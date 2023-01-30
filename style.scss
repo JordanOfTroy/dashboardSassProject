@@ -63,7 +63,7 @@ body {
 
 section {
     width: 100%;
-    // padding: $section-padding;
+    padding: $section-padding;
 }
 
 h2 {
@@ -163,6 +163,9 @@ h2 {
 
 .displayColumn {
     width: $display-width;
+    @media (max-width: $med-breakpoint) {
+        height: fit-content;
+    }
 }
 
 .rowSection {
@@ -171,7 +174,7 @@ h2 {
     & > div {
         width: 50%;
     }
-    margin-bottom: 4em;
+    margin-bottom: 2em;
 }
 
 .searchDiv {
@@ -199,9 +202,12 @@ h2 {
     height: 30%;
     & > div {
         width: 50%;
+        @media (max-width: $med-breakpoint) {
+            width: 100%;
+        }
     }
-
 }
+
 
 .iconDiv {
     @include flexMe(flex, row, center, flex-end);
@@ -229,15 +235,17 @@ h2 {
 .textDiv {
     height: 80%;
     @include flexMe (flex, column, flex-start, space-evenly);
-    & > * {
-        // margin-bottom: $inner-margin;
-    }
     h1 {
         @include bigHeader
     }
     .address {
         h3 {
             @include headerSub
+        }
+    }
+    & > * {
+        @media (max-width: $med-breakpoint) {
+            margin: $small-margin 0;
         }
     }
 }
@@ -298,6 +306,9 @@ h2 {
         width: 100%;
         margin: $inner-margin;
     }
+    @media (max-width: $med-breakpoint) {
+        flex-wrap: wrap;
+    }
 }
 
 .infoCard {
@@ -306,6 +317,10 @@ h2 {
     height: 100%;
     margin-bottom: $inner-margin;
     padding: $section-padding;
+    a {
+        text-decoration: none;
+        color: $black;
+    }
     .cardheader {
         @include flexMe (flex, row, flex-start, space-between);
         margin-bottom: $reg-margin;
