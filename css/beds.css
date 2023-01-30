@@ -85,24 +85,76 @@ body {
   padding: calc(min(95vw, 126.6666666667vh) * 0.209 * 0.09);
 }
 
-.pri-nav-clip {
+.nav-pane-content-box {
   height: calc(min(0.75 * min(95vw, 126.6666666667vh), 71.25vw) - 2 * min(95vw, 126.6666666667vh) * 0.209 * 0.09);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
   background-color: orange;
 }
 
 .pri-nav {
   background-color: yellow;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-begin;
+  flex-wrap: nowrap;
 }
 
 .brand {
   background-color: lightgreen;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-begin;
+  align-items: space-between;
+  flex-wrap: nowrap;
+  font-size: 5px;
+}
+
+.corp-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: space-between;
+  flex-wrap: nowrap;
 }
 
 .app-nav {
   background-color: green;
 }
 
+.app-nav-itm {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-begin;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.app-nav-itm img {
+  display: block;
+}
+
+.app-nav-itm-name {
+  font-size: 5px;
+}
+
 .splash {
   background-color: #dd0;
+}
+.splash img {
+  display: block;
+  width: 100%;
+}
+
+.brag-words {
+  font-size: 5px;
+}
+
+.org-name {
+  font-size: 5px;
 }/*# sourceMappingURL=beds.css.map */

@@ -4,8 +4,6 @@
 @use 'assets/beds-vars' as *;
 @use 'assets/beds-mixins' as *;
 
-// display-flex($justify: center, $align: space-between, $direction: row, $wrap: nowrap)
-
 body {
     @include display-flex(center, center);
     background-color: $color-four;
@@ -34,28 +32,62 @@ body {
     padding: $nav-pane-padding;
 }
 
-.pri-nav-clip {
-    height: $pri-nav-clip-height;
-    // height: 100px;
-    // margin: $nav-pane-clip-margin;
-    // box-sizing: border-box;
+.nav-pane-content-box {
+    height: $nav-pane-content-box-height;
     overflow: hidden;
+    @include display-flex(space-between, center, column);
 
     background-color: orange;
 }
 
+// display-flex($justify: center, $align: space-between, $direction: row, $wrap: nowrap)
+
 .pri-nav {
     background-color: yellow;
+
+    width: 100%;
+    @include display-flex(center, flex-begin, column);
 }
 
 .brand {
     background-color: lightgreen;
+    @include display-flex(flex-begin);
+    font-size: 5px;
+}
+
+.corp-logo {
+    @include display-flex();
 }
 
 .app-nav {
     background-color: green;
 }
 
+.app-nav-itm {
+    @include display-flex(flex-begin, center);
+
+    img {
+        display: block;
+    }
+}
+
+.app-nav-itm-name {
+    font-size: 5px;
+}
+
 .splash {
     background-color: #dd0;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+.brag-words {
+    font-size: 5px;
+}
+
+.org-name {
+    font-size: 5px;
 }

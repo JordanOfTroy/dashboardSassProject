@@ -12,7 +12,7 @@ $app-border-radius: calc($app-width * 0.024);
 $nav-pane-width: calc($app-width * 0.209);
 $nav-pane-padding: calc($nav-pane-width * 0.09);
 
-$pri-nav-clip-height: calc($app-height - calc(2 * $nav-pane-padding));
+$nav-pane-content-box-height: calc($app-height - calc(2 * $nav-pane-padding));
 
 ////////////
 // COLORS //
