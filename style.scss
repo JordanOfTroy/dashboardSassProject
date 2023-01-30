@@ -163,6 +163,9 @@ h2 {
 
 .displayColumn {
     width: $display-width;
+    @media (max-width: $med-breakpoint) {
+        height: fit-content;
+    }
 }
 
 .rowSection {
@@ -199,9 +202,12 @@ h2 {
     height: 30%;
     & > div {
         width: 50%;
+        @media (max-width: $med-breakpoint) {
+            width: 100%;
+        }
     }
-
 }
+
 
 .iconDiv {
     @include flexMe(flex, row, center, flex-end);
@@ -298,6 +304,9 @@ h2 {
         width: 100%;
         margin: $inner-margin;
     }
+    @media (max-width: $med-breakpoint) {
+        flex-wrap: wrap;
+    }
 }
 
 .infoCard {
@@ -306,6 +315,10 @@ h2 {
     height: 100%;
     margin-bottom: $inner-margin;
     padding: $section-padding;
+    a {
+        text-decoration: none;
+        color: $black;
+    }
     .cardheader {
         @include flexMe (flex, row, flex-start, space-between);
         margin-bottom: $reg-margin;
