@@ -13,6 +13,10 @@ $color-four: #FFD155;
 $color-five: #FDC798;
 $color-six: #F8FD99;
 
+//breakpoints
+$med-breakpoint: 900px;
+$sm-breakpoint: 650px;
+
 //FONT
 $font-fam: Helvetica, Arial, sans-serif;
 $big-header-size: 2em;
@@ -25,16 +29,20 @@ $reg-word-spacing: .25em;
 
 //SIZING
 $inner-width: 90%;
-$inner-margin: 1em;
-$main-radius: 20px;
-$small-radius: 10px;
-$main-padding: 2em;
-$small-margin: 1em;
-$reg-margin: 3em;
-$section-padding: 1em;
-$small-padding: .5em;
 $menu-width: 25%;
 $display-width: 75%;
+
+$inner-margin: 1em;
+$reg-margin: 3em;
+$small-margin: 1em;
+
+$main-padding: 2em;
+$section-padding: 1em;
+$small-padding: .5em;
+
+$profile-radius: 50px;
+$main-radius: 20px;
+$small-radius: 10px;
+
 $small-icon-size: 30px;
 $profile-icon-size: 50px;
-$profile-radius: 50px;
