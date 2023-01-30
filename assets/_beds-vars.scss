@@ -1,13 +1,23 @@
 @use 'var' as *;
 
-// SIZING
+////////////
+// SIZING //
+////////////
+
 // $app-width: $inner-width;
 $app-width: min(95vw, (4/3) * 95vh);
 $app-height: min(0.75 * $app-width, (3/4 * 95vw));
 $app-border-radius: calc($app-width * 0.024);
 
-// COLORS
+$nav-pane-width: calc($app-width * 0.209);
 
-// FONT
+////////////
+// COLORS //
+////////////
+
+
+//////////
+// FONT //
+//////////
 $pri-font-size: calc($app-height * 0.10);
 $pri-font-color: white;

@@ -69,10 +69,16 @@ body {
   background-color: #1B1F24;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: space-between;
   flex-wrap: nowrap;
   font-family: Helvetica, Arial, sans-serif;
   font-size: calc(min(0.75 * min(95vw, 126.6666666667vh), 71.25vw) * 0.1);
   color: white;
+  overflow: hidden;
+}
+
+.nav-pane {
+  width: calc(min(95vw, 126.6666666667vh) * 0.209);
+  background-color: #121418;
 }/*# sourceMappingURL=beds.css.map */
