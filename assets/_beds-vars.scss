@@ -8,19 +8,25 @@
 $app-width: min(95vw, (4/3) * 95vh);
 $app-height: min(0.75 * $app-width, (3/4 * 95vw));
 $app-border-radius: calc($app-width * 0.024);
+$app-content-border-radius: calc($app-width * 0.017); 
 
 $nav-pane-width: calc($app-width * 0.209);
 $nav-pane-padding: calc($nav-pane-width * 0.09);
 
 $nav-pane-content-box-height: calc($app-height - calc(2 * $nav-pane-padding));
 
+$app-nav-height: calc($app-height * 0.45);
+
 ////////////
 // COLORS //
 ////////////
 
+$splash-background-color: #3393ff;
 
 //////////
 // FONT //
 //////////
 $pri-font-size: calc($app-height * 0.10);
 $pri-font-color: white;
+
+$app-nav-itm-name-font-size: calc($app-height * 0.025);
