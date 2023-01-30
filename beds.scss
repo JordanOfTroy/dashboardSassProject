@@ -1,6 +1,24 @@
 @use 'assets/reset' as *;
 @use 'assets/var' as *;
+// @use 'assets/mixing' as *;
+@use 'assets/beds-vars' as *;
+@use 'assets/beds-mixins' as *;
+
+// display-flex($justify: center, $align: space-between, $direction: row, $wrap: nowrap)
 
 body {
+    @include display-flex(center, center);
+    background-color: $color-four;
+    height: 100vh;
+}
+
+.app {
+    width: $app-width;
+    height: $app-height;
+    border-radius: $app-border-radius;
+    background-color: $alt-black;
+    @include display-flex(center, center);
     font-family: $font-fam;
+    font-size: $pri-font-size;
+    color: $pri-font-color;
 }
