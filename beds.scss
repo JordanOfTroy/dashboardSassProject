@@ -9,7 +9,8 @@
 body {
     @include display-flex(center, center);
     background-color: $color-four;
-    height: 100vh;
+    background-color: purple;
+    // height: 100vh;
 }
 
 .app {
@@ -21,10 +22,40 @@ body {
     font-family: $font-fam;
     font-size: $pri-font-size;
     color: $pri-font-color;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .nav-pane {
     width: $nav-pane-width;
     background-color: $black;
+    background-color: red;
+
+    box-sizing: border-box;
+    padding: $nav-pane-padding;
+}
+
+.pri-nav-clip {
+    height: $pri-nav-clip-height;
+    // height: 100px;
+    // margin: $nav-pane-clip-margin;
+    // box-sizing: border-box;
+    overflow: hidden;
+
+    background-color: orange;
+}
+
+.pri-nav {
+    background-color: yellow;
+}
+
+.brand {
+    background-color: lightgreen;
+}
+
+.app-nav {
+    background-color: green;
+}
+
+.splash {
+    background-color: #dd0;
 }

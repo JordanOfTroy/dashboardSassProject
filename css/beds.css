@@ -59,7 +59,7 @@ body {
   align-items: center;
   flex-wrap: nowrap;
   background-color: #FFD155;
-  height: 100vh;
+  background-color: purple;
 }
 
 .app {
@@ -75,10 +75,34 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: calc(min(0.75 * min(95vw, 126.6666666667vh), 71.25vw) * 0.1);
   color: white;
-  overflow: hidden;
 }
 
 .nav-pane {
   width: calc(min(95vw, 126.6666666667vh) * 0.209);
   background-color: #121418;
+  background-color: red;
+  box-sizing: border-box;
+  padding: calc(min(95vw, 126.6666666667vh) * 0.209 * 0.09);
+}
+
+.pri-nav-clip {
+  height: calc(min(0.75 * min(95vw, 126.6666666667vh), 71.25vw) - 2 * min(95vw, 126.6666666667vh) * 0.209 * 0.09);
+  overflow: hidden;
+  background-color: orange;
+}
+
+.pri-nav {
+  background-color: yellow;
+}
+
+.brand {
+  background-color: lightgreen;
+}
+
+.app-nav {
+  background-color: green;
+}
+
+.splash {
+  background-color: #dd0;
 }/*# sourceMappingURL=beds.css.map */
