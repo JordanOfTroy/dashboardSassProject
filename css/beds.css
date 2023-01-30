@@ -109,9 +109,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-begin;
-  align-items: space-between;
+  align-items: flex-begin;
   flex-wrap: nowrap;
-  font-size: 5px;
 }
 
 .corp-logo {
@@ -120,6 +119,16 @@ body {
   justify-content: center;
   align-items: space-between;
   flex-wrap: nowrap;
+  font-size: calc(min(0.75 * min(95vw, 126.6666666667vh), 71.25vw) * 0.03);
+}
+
+.corp-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-begin;
+  align-items: space-between;
+  flex-wrap: nowrap;
+  font-size: calc(min(0.75 * min(95vw, 126.6666666667vh), 71.25vw) * 0.03);
 }
 
 .app-nav {
@@ -161,10 +170,29 @@ body {
   width: 100%;
 }
 
+.splash-text {
+  background-color: red;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
 .brag-words {
   font-size: 5px;
 }
 
 .org-name {
   font-size: 5px;
+}
+
+.main-pane {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }/*# sourceMappingURL=beds.css.map */

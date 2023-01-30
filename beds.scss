@@ -48,17 +48,20 @@ body {
 }
 
 .brand {
-    @include display-flex(flex-begin);
-    font-size: 5px;
-
-    //    background-color: lightgreen;
+    @include display-flex(flex-begin, flex-begin);
 }
 
 .corp-logo {
     @include display-flex();
+    font-size: $brand-font-size;
 }
 
-// display-flex($justify: center, $align: space-between, $direction: row, $wrap: nowrap)
+.corp-name {
+    @include display-flex(flex-begin);
+    font-size: $brand-font-size;
+
+    //    background-color: lightgreen;
+}
 
 .app-nav {
     height: $app-nav-height;
@@ -89,6 +92,7 @@ body {
     background-color: $splash-background-color;
     border-radius: $app-content-border-radius;
     overflow: hidden;
+
     img {
         display: block;
         width: 100%;
@@ -97,10 +101,23 @@ body {
     //    background-color: #dd0;
 }
 
+.splash-text {
+    background-color: red;
+    color: black;
+    @include display-flex(center, center, column);
+}
+
 .brag-words {
     font-size: 5px;
 }
 
 .org-name {
     font-size: 5px;
+}
+
+// display-flex($justify: center, $align: space-between, $direction: row, $wrap: nowrap)
+
+.main-pane {
+    width: 100%;
+    @include display-flex(center, center, column);
 }
