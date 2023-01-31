@@ -89,7 +89,7 @@ body {
 }
 
 .splash {
-    background-color: $splash-background-color;
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    background-color: $splash-background-color;
     border-radius: $app-content-border-radius;
     overflow: hidden;
 
@@ -97,21 +97,21 @@ body {
         display: block;
         width: 100%;
     }
-
-    //    background-color: #dd0;
 }
 
 .splash-text {
-    background-color: red;
-    color: black;
-    @include display-flex(center, center, column);
+    background-color: yellow;
+    // color: black;
+    // @include display-flex(center, center, column);
 }
 
 .brag-words {
-    font-size: 5px;
+    background-color: red;
+    font-size: 10px;
 }
 
 .org-name {
+    background-color: blue;
     font-size: 5px;
 }
 

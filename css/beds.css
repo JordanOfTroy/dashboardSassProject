@@ -171,20 +171,16 @@ body {
 }
 
 .splash-text {
-  background-color: red;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
+  background-color: yellow;
 }
 
 .brag-words {
-  font-size: 5px;
+  background-color: red;
+  font-size: 10px;
 }
 
 .org-name {
+  background-color: blue;
   font-size: 5px;
 }
 
